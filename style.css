@@ -1,0 +1,10 @@
+/* <style></style> : css언어를 사용하라는 의미, a태그의 모든 색을 black으로 */
+a {color:black; text-decoration:none;}/* {} : 선택자, 어디를 바꿀지 지정, ; : 여러효과 시 구분 */
+.saw {color:gray;}/* .saw : .을 통해 클래스를 선택 */
+#active {color:red;}/* #active : #을 통해 아이디를 선택 */
+#h1 {font-size: 45px; text-align:center; border-bottom:1px solid gray; margin:0; padding:20px;}
+#list {border-right:1px solid gray; width:100px; margin:0; padding:20px; padding-left:33px;}
+body {margin:0;}
+#grid {display:grid; grid-template-columns: 150px 1fr;}
+#article {padding-left:25px;}
+@media(max-width:800px) {#grid {display:block;} #list {border-right:none;} #h1 {border-bottom:none;}}
