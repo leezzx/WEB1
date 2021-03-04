@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #grid {border:5px solid pink; display:grid; grid-template-columns:150px 1fr;} /* grid-template-columns: 그리드 배치 비율, 150px 1fr : 앞은 150px 나머지 전부, 1fr 1fr : 1:1 비율, 2fr 1fr : 2:1 비율 등 */
+            div {border:5px solid gray;} /* caniuse.com : 웹 프론트 개발 관련 기술 적용가능한지 여부 보여주는 사이트 */
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>NAVIGATION</div><!-- div : 화면 전체를 사용하는(block level) 무색무취의 태그, inline 태그는 span -->
+            <div>ARTICLE</div>
+        </div>
+    </body>
+</html>

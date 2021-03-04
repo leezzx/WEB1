@@ -1,0 +1,68 @@
+<!doctype html><!-- <!doctype html> : 최상위에서 전체를 묶는 테그, 이 문서는 html이다. -->
+<html>
+<head><!-- head : body를 설명하는 요소를 감싸는 태그-->
+    <title>WEB1 - html</title><!-- title : 웹 페이지의 이름 설정 -->
+    <meta charset="utf-8"><!-- charset : UTF-8로 문서를 읽으라고 명령 -->
+    <link rel="stylesheet" href="style.css"><!-- link : 현 자리에 style.css파일을 적용 -->
+</head>
+<body><!-- body : 본문을 감싸는 태그 -->
+    <h1 id="h1"><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <div id="list">
+            <ul><!-- ul : li의 부모 태그, 리스트 끼리 구분해줌-->
+                <li><!-- li : 목차 만들기 태그 --><a href="practice1.html" id="active">HTML</a></li><!-- 드래그 후 Tap 하위목록으로 넣기 -->
+                <li><a href="practice2.html" class="saw" style="color:blue; text-decoration:underline;">CSS</a></li>
+                <li><a href="practice3.html" class="saw">JavaScript</a></li>
+            </ul>
+            <!-- html을 사용하여 color태그를 통해 하나하나 red로 바꿔줄 경우
+            <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+            <ul>
+                <li><a href="practice1.html"><font color="red">1. HTML</a></a></li>
+                <li><a href="practice2.html"><font color="red">2. CSS</a></a></li>
+                <li><a href="practice3.html"><font color="red">3. JavaScript</a></a></li>
+            </ul>
+            -->
+            <ol><!-- ol : 리스트들에 자동으로 번호 부여 -->
+                <li>egoing</li>
+                <li>k8805</li>
+                <li>youbin</li>
+            </ol>
+        </div>
+        <div id="article">
+            <h2><!-- h1 ~ 6 : 제목을 나타내는 태그, 굵게, 줄바꿈 -->HTML이란 무엇인가?</h2>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3iojfKeOz-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- inframe을 통해 동영상 소스 넣기 : Youtube에서 공유하기, 태그 복사 붙여넣기 --></p>
+            <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification"><!-- a href="" : 문장에 링크 걸기, target="_blank" : 새창에 열기, title="" : 링크 걸린 문장에 마우스 올리면 설명나옴 -->Hypertext Makeup Language (HTML)</a> is the standard markup language for <strong><!-- strong : 진하게 표시 -->creating <u><!-- u : 밑줄 -->web</u> page</strong> and web applications. 
+            <p><!-- p : 단락 나누기, 정해져 있는 여백 만큼만 벌어짐(CSS로 여백 지정 가능 : <p style="margin-top:45px;">) -->Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML descibes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <img src="coding.jpg" width="100%"><!-- scr(속성 : Attribute) : img를 Web폴더에 저장 후 파일명 입력, width(속성 : Attribute) : 크기 조정 --><!-- unsplah.com : 무료저작권 이미지 사이트 -->
+            <br><!-- br : <br>개수만큼 줄바꿈, </br>필요 없음 --><br>Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML descibes the structure of a web page semantically and originally included cues for the appearance of the document.
+        </div>
+    </div>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <p>
+        <div id="disqus_thread"></div><!-- DISQUS 사이트를 통해 댓글 기능 코드 추가 -->
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-gy2fydll3x.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+</body>
+</html>
