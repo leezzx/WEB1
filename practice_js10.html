@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Object(객체)</h1>
+        배열[] : 정보를 순서대로 저장<br>객체{} : 순서 없이 저장, 이름이 있는 정리정돈 상자
+        <h2>Create</h2>
+        <script>
+            var cowokers = {
+                "programmer":"egoing", "designer":"leezche"
+            };
+            document.write("프로그래머 : " + cowokers.programmer + "<br>"); // 프로그래머 : egoing
+            document.write("디자이너 : " + cowokers.designer + "<br>"); // 디자이너 : leezche
+            cowokers.bookkeeper = "duru"; // duru 추가할 때
+            document.write("회계 : " + cowokers.bookkeeper + "<br>"); // 회계 : duru
+            cowokers["data scientist"] = "taeho"; // taeho 추가, [""] : 문자 띄어쓰기를 하고 싶을 경우
+            document.write("데이터 사이언티스트 : " + cowokers["data scientist"] + "<br>"); // 데이터 사이언티스트 : taeho
+        </script>
+        
+        <h2>Iterate(데이터 순회)</h2>
+        <script>
+            for(var key in cowokers) { // key : "programmer", "designer" ..
+                document.write(key + " : " + cowokers[key] + "<br>"); // 객체안의 모든 내용 가져올 수 있음(key와 지정된 값들)
+            }
+        </script>
+
+        <h2>Property & Method</h2>
+        <script>
+            cowokers.showAll = function() { // showAll이라는 Metod 생성 = function showAll() {}
+                for(var key in this) {
+                    document.write(key + " : " + this[key] + "<br>");
+                }
+            }
+            cowokers.showAll();
+        </script>
+    </body>
+</html>

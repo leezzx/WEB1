@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Array(배열)</h1>
+        <h2>Syntax</h2>
+        <script>
+            var coworkers = ["egoing", "leezche"]; // []를 통해 배열을 만듬
+        </script>
+        
+        <h2>get</h2>
+        <script>
+            document.write(coworkers[0]); // [0] : 배열의 첫번째 가져오기
+            document.write(coworkers[1]); // [1] : 두번째
+        </script>
+        
+        <h2>count</h2>
+        <script>
+            document.write(coworkers.length); // 2
+        </script>
+
+        <h2>add</h2>
+        <script>
+            coworkers.push('duru'); // duru add
+            coworkers.push('teaho'); // teaho add = ["egoing", "leezche", "duru", "teaho"];
+        </script>
+        <script>
+            document.write(coworkers.length); // 4
+        </script>
+    </body>
+</html>
